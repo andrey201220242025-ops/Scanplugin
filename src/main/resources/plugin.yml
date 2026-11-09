@@ -1,0 +1,18 @@
+
+
+name: ScanPlugin
+version: '1.0'
+main: com.example.scanplugin.ScanPlugin
+api-version: '26.2'
+depend: [packetevents]
+commands:
+  scan:
+    description: Сканирует клиентские данные игрока
+    usage: /scan <ник>
+    permission: scan.use
+permissions:
+  scan.use:
+    description: Доступ к /scan
+    default: op
+
+
